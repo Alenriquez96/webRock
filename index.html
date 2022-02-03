@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>RockNews</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-guitar-music-kiranshastry-solid-kiranshastry.png" type='image'>
+</head>
+<body>
+    <header>
+        <!-- nav>ul>li*3>a -->
+        <nav>
+            <ul class="center">
+                <li><a href="#">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#quotes">Quotes</a></li>
+                <li><a href="#top5">Top 5</a></li>
+                <li><a href="#song">Songs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="pages/media.html" target="_blank">Media</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="center">&#129304;Bienvenidos a mi landing de Rock&#129304;</h1>
+        <p>Aquí habrá más cositas...</p>
+        <!-- section>h2+(article>h3+p)*3 -->
+        <section id="News">
+            <h2>Rock News</h2>
+            <article>
+                <h3>Noticia 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quia aperiam? Sint, tenetur. Eveniet fugit omnis, nostrum, nulla vel at quia ipsam aliquam quam vitae rem neque a. Aliquam dicta <sub>quam, deleniti error id</sub> odit aliquid fugit ducimus sint reiciendis explicabo, natus veniam, eum nihil quos reprehenderit? Est, vero consequatur.</p>
+            </article>
+            <article>
+                <h3>Noticia 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque doloribus dicta officia quidem. Dignissimos maxime assumenda facilis quo. Inventore necessitatibus, ullam vero itaque rerum doloribus labore accusantium saepe aliquam, repellat quisquam impedit cumque iusto aperiam maiores mollitia esse modi tempore!</p>
+            </article>
+            <article>
+                <h3>Noticia 3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sapiente aperiam beatae consectetur, nostrum veniam ex quis, doloribus labore mollitia in sint eius. Quos accusantium dolorum facilis, corporis mollitia laboriosam?</p>
+            </article>
+        </section>
+        <!-- section>h2+article>h3+blockquote -->
+        <section id="quotes">
+            <h2>Famous rock quotes</h2>
+            <article>
+                <h3>
+                    <a href="https://es.wikipedia.org/wiki/Lemmy_Kilmister">Lemmy Killmister</a>
+                </h3>
+                <blockquote cite="https://es.wikipedia.org/wiki/Lemmy_Kilmister">"If you think that you are too old to rock 'n roll then you are."</blockquote>
+            </article>
+        </section>
+        <!-- section>h2+ol<li*5 -->
+        <section id="top5">
+            <h2>Weekly top 5</h2>
+            <ol>
+                <li>Elvis Presley</li>
+                <li>Rolling Stones</li>
+                <li>AC/DC</li>
+                <li>Jefferson Airplane</li>
+                <li>Metallica</li>
+            </ol>
+        </section>
+        <section id="song">
+            <h2>Most Famous Songs</h2>
+            <table id=songs>
+                <tr>
+                    <th colspan="3">The 28 best classic rock songs of all time</th>
+                </tr>
+                <tr>
+                  <th>Name</th>
+                  <th>Author</th>
+                  <th>Year</th>
+                </tr>
+                <tr class="song">
+                  <td>Purple Haze</td>
+                  <td>Jimmy Hendrix</td>
+                  <td>1972</td>
+                </tr>
+                <tr class="song">
+                  <td>Whole Lotta Love</td>
+                  <td>Led Zeppelin</td>
+                  <td>1974</td>
+                </tr>
+                <tr class="song">
+                    <td>Sympathy for the devil</td>
+                    <td>Rolling Stones</td>
+                    <td>1969</td>
+                  </tr>
+              </table>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form>
+                <h4>Datos personales</h4>
+                <label for="fname">Nombre:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Ingresa tu nombre" required maxlength="16"><br>
+                <label for="lname">Apellidos:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Ingresa tus apellidos" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="Ingresa tu email" required><br><br>
+
+                <h4>Género Favorito</h4>
+                <input type="radio" id="Hard" name="favrock" value="Hard Rock">
+                <label for="Hard Rock">Hard Rock</label>
+                <input type="radio" id="Grunge" name="favrock" value="Grunge">
+                <label for="Grunge">Grunge</label>
+                <input type="radio" id="Glam" name="favrock" value="Glam Rock">
+                <label for="Glam Rock">Glam Rock</label><br><br>
+
+                <h4>Comentarios</h4>
+                <textarea name="Comentarios" id="Comentarios" cols="50" rows="8" placeholder="Pon un comentario."></textarea> <br><br>
+
+                <h4>Privacidad</h4>
+                <input type="checkbox" id="accept" name="accept" value="" required>
+                <label for="vehicle1"> Acepto las condiciones de uso</label><br>
+                <input type="checkbox" id="Permito" name="Permito" value="">
+                <label for="vehicle2"> Permito que manden publicidad</label><br><br>
+
+                <input type="submit" value="Enviar">
+              </form>
+        </section>
+    </main>
+    <footer><br><br>@copyright Alberto</footer>
+    <div class="top"><a href="#">
+        <h4>&#127928;&#9757;Back to top</h4>
+    </a>
+    </div>
+</body>
+</html>
